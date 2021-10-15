@@ -7,10 +7,10 @@
              mc:Ignorable="d" 
              d:DesignHeight="460" d:DesignWidth="680">
 
-    <Grid Background="Black">
+    <Border CornerRadius="20" Background="Black">
 
-
-        <TextBlock HorizontalAlignment="Center"
+        <Grid>
+            <TextBlock HorizontalAlignment="Center"
                    TextWrapping="Wrap" 
                    Text="mShuTer" 
                    VerticalAlignment="Center" 
@@ -27,7 +27,7 @@
                 <Label Content="" Name="label2" HorizontalAlignment="Left" Margin="74,358,0,0" VerticalAlignment="Top" Width="96" Height="35" Foreground="White" FontSize="24" FontFamily="Rockwell Extra Bold"/>
                 <Label Content="" Name="label3" HorizontalAlignment="Left" Margin="290,335,0,0" VerticalAlignment="Top" Width="82" Height="43" Foreground="White" FontSize="24" FontFamily="Showcard Gothic"/>
                 <Label Content="" Name="label1" HorizontalAlignment="Left" Margin="510,358,0,0" VerticalAlignment="Top" Width="91" Height="35" Foreground="White" FontSize="22" RenderTransformOrigin="0.186,0.419" FontFamily="Rockwell Extra Bold"/>
-                <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="100" Margin="170,353,0,-33" VerticalAlignment="Top" Width="100"/>
+                <!--  <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="100" Margin="170,353,0,-33" VerticalAlignment="Top" Width="100"/> -->
                 <TextBlock HorizontalAlignment="Left" Margin="33,317,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="10" Height="18" Foreground="#FFF9F9F9" FontSize="16" FontFamily="Segoe UI Black"/>
                 <TextBlock HorizontalAlignment="Left" Margin="110,317,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="7" Height="18" Foreground="#FFF9F9F9" FontSize="16" FontFamily="Segoe UI Black"/>
                 <TextBlock HorizontalAlignment="Left" Margin="185,318,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="11" Height="18" Foreground="#FFF9F9F9" FontSize="16" FontFamily="Segoe UI Black"/>
@@ -35,8 +35,7 @@
                 <TextBlock HorizontalAlignment="Left" Margin="550,317,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="7" Height="18" Foreground="#FFF9F9F9" FontSize="16" FontFamily="Segoe UI Black"/>
                 <TextBlock HorizontalAlignment="Left" Margin="620,317,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="9" Height="18" Foreground="#FFF9F9F9" FontSize="16" FontFamily="Segoe UI Black"/>
 
-
             </Grid>
-
         </Grid>
+    </Border>
 </UserControl>

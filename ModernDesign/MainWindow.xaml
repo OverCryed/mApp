@@ -16,8 +16,7 @@
         <viewModel:MainViewModel/>
     </Window.DataContext>
 
-    <Border Background="#272537"
-            CornerRadius="20">
+    <Border Background="#272537" CornerRadius="20">
 
         <Grid>
             <Grid.ColumnDefinitions>
@@ -40,7 +39,8 @@
 
             <StackPanel Grid.Row="1" >
 
-                <RadioButton Content="Home"
+                <RadioButton Name="HomeButton"
+                             Content="Home"
                              Height="50"
                              Foreground="White"
                              FontSize="20"
@@ -49,7 +49,8 @@
                              IsChecked="True"
                              Command="{Binding HomeViewCommand}"/>
 
-                <RadioButton Content="mShutter"
+                <RadioButton Name="mShutterButton"
+                             Content="mShutter"
                              Height="50"
                              Foreground="White"
                              FontSize="20"
