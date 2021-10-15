@@ -16,6 +16,9 @@
                 <view:HomeView/>
             </DataTemplate>
 
+            <DataTemplate DataType="{x:Type viewModel:mShutterViewModel}">
+                <view:mShutterView/>
+            </DataTemplate>
 
         </ResourceDictionary>
     </Application.Resources>
