@@ -7,6 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Fonts\**" />
+    <Compile Remove="MVVM\Model\**" />
+    <EmbeddedResource Remove="Fonts\**" />
+    <EmbeddedResource Remove="MVVM\Model\**" />
+    <None Remove="Fonts\**" />
+    <None Remove="MVVM\Model\**" />
+    <Page Remove="Fonts\**" />
+    <Page Remove="MVVM\Model\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="images\dogy.png" />
   </ItemGroup>
 
@@ -14,11 +25,6 @@
     <Content Include="images\dogy.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Fonts\" />
-    <Folder Include="MVVM\Model\" />
   </ItemGroup>
 
 </Project>

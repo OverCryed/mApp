@@ -34,7 +34,7 @@
                    VerticalAlignment="Center"
                    HorizontalAlignment="Left"
                    Foreground="White"
-                   FontSize="22"
+                   FontSize="30"
                    Margin="20,0,0,0" />
 
             <StackPanel Grid.Row="1" >
@@ -47,14 +47,14 @@
                              IsChecked="True"
                              Command="{Binding HomeViewCommand}"/>
 
-                <RadioButton Content="Discovery"
+                <RadioButton Content="mShutter"
                              Height="50"
                              Foreground="White"
                              FontSize="14"
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding DiscoveryCommand}"/>
 
-                <RadioButton Content="Featured"
+                <RadioButton Content="Killer"
                              Height="50"
                              Foreground="White"
                              FontSize="14"

@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="460" d:DesignWidth="800">
     <StackPanel>
-        <TextBlock Text="Discover"
+        <TextBlock Text="Aplikácie na jednodukšie používanie"
                        Foreground="White"
                        HorizontalAlignment="Left"
                        FontSize="20"

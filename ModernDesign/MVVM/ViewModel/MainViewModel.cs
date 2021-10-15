@@ -9,7 +9,7 @@ namespace ModernDesign.MVVM.ViewModel
         public RelayCommand HomeViewCommand { get; set; }
         public RelayCommand DiscoveryCommand { get; set; }
         public HomeViewModel HomeVM { get; set; }
-        public DiscoveryViewModel DiscoveryVM { get; set; }
+
 
         private object _currentView;
 
@@ -26,18 +26,12 @@ namespace ModernDesign.MVVM.ViewModel
         public MainViewModel()
         {
             HomeVM = new HomeViewModel();
-            DiscoveryVM = new DiscoveryViewModel();
 
             CurrentView = HomeVM;
 
             HomeViewCommand = new RelayCommand(o =>
             {
                 CurrentView = HomeVM;
-            });
-
-            DiscoveryCommand = new RelayCommand(o =>
-            {
-                CurrentView = DiscoveryVM;
             });
         }
     }
