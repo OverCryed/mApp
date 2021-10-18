@@ -15,6 +15,7 @@
                                      Foreground="White"
                                      FontWeight="Bold"
                                      IsReadOnly="True"
+                                     Margin="5"
                                      FontSize="20"/>
                         </Grid>
                         
