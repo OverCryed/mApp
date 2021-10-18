@@ -123,7 +123,7 @@
                      Grid.Column="1"
                      Style="{StaticResource DateTimeTextBox}"/>
 
-            <TextBox Name="date"
+                <TextBox Name="date"
                      Text="date"   
                      HorizontalAlignment="Left"   
                      VerticalAlignment="Center"
@@ -131,7 +131,6 @@
                      Grid.Row="1"
                      Grid.ColumnSpan="3"
                      Style="{StaticResource DateTimeTextBox}"/>
-
             </Grid>
 
             <TextBox Width="250"
