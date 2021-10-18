@@ -116,6 +116,7 @@
                    Margin="5,5,40,5"
                    Grid.Column="3" MouseDown="minimize_MouseDown"/>
 
+                
             <TextBox Name="time"
                      Text="time"  
                      HorizontalAlignment="Left"
