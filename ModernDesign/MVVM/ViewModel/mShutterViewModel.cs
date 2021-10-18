@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ModernDesign.MVVM.ViewModel
+namespace mApp.MVVM.ViewModel
 {
     class mShutterViewModel
     {

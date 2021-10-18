@@ -3,7 +3,7 @@ using System.Windows;
 using System.Windows.Controls;
 
 
-namespace ModernDesign.MVVM.View
+namespace mApp.MVVM.View
 {
     /// <summary>
     /// Interaction logic for mShutterView.xaml

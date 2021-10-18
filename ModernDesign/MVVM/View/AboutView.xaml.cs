@@ -14,11 +14,11 @@ using System.Windows.Shapes;
 namespace mApp.MVVM.View
 {
     /// <summary>
-    /// Interaction logic for HomeView.xaml
+    /// Interaction logic for AboutView.xaml
     /// </summary>
-    public partial class HomeView : UserControl
+    public partial class AboutView : UserControl
     {
-        public HomeView()
+        public AboutView()
         {
             InitializeComponent();
         }

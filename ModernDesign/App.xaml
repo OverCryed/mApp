@@ -1,15 +1,16 @@
-﻿<Application x:Class="ModernDesign.App"
+﻿<Application x:Class="mApp.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:ModernDesign"
-             xmlns:viewModel="clr-namespace:ModernDesign.MVVM.ViewModel"
-             xmlns:view="clr-namespace:ModernDesign.MVVM.View"
+             xmlns:local="clr-namespace:mApp"
+             xmlns:viewModel="clr-namespace:mApp.MVVM.ViewModel"
+             xmlns:view="clr-namespace:mApp.MVVM.View"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Theme/MenuButtonTheme.xaml"/>
                 <ResourceDictionary Source="Theme/TextBoxTheme.xaml"/>
+                <ResourceDictionary Source="Theme/DateTimeTheme.xaml"/>
             </ResourceDictionary.MergedDictionaries>
 
             <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
@@ -18,6 +19,18 @@
 
             <DataTemplate DataType="{x:Type viewModel:mShutterViewModel}">
                 <view:mShutterView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:KillerViewModel}">
+                <view:KillerView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:NoterViewModel}">
+                <view:NoterView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:AboutViewModel}">
+                <view:AboutView/>
             </DataTemplate>
 
         </ResourceDictionary>

@@ -18,13 +18,25 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="images\backgound.png" />
     <None Remove="images\dogy.png" />
+    <None Remove="images\minimize.png" />
+    <None Remove="images\redCross.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="images\dogy.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Resource Include="images\backgound.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\minimize.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\redCross.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

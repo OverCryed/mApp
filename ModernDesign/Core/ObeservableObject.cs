@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace ModernDesign.Core
+namespace mApp.Core
 {
     class ObeservableObject : INotifyPropertyChanged
     {

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace mApp.MVVM.ViewModel
 {
-    class HomeViewModel
+    class AboutViewModel
     {
     }
 }

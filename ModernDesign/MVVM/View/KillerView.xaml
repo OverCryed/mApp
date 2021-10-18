@@ -1,0 +1,124 @@
+﻿<UserControl x:Class="mApp.MVVM.View.KillerView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:mApp.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <Border Background="Black" CornerRadius="20">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="1" Grid.ColumnSpan="2"
+                   Name="programs"
+                   Text="PROGRAMS"
+                   TextAlignment="Center"
+                   Foreground="Yellow"
+                   FontSize="35"
+                   FontFamily="Algerian"
+                   Height="50"
+                   Width="210" />
+        <Button Grid.Row="2" Grid.Column="1"
+                Name="Spotify"
+                Content="Spotify"
+                Background="red"
+                FontWeight="Black"
+                Height="30"
+                Width="100" Click="Spotify_Click">
+        </Button>
+        <Button Grid.Row="2" Grid.Column="0"
+                Name="chrome"
+                Content="Chrome"
+                Background="red"
+                FontWeight="Black"
+                Height="30"
+                Width="100" Click="chrome_Click">
+        </Button>
+        <Button Grid.Row="5" Grid.Column="0"
+                Name="VisualStudio"
+                Content="VisualStudio"
+                Background="red"
+                FontWeight="Black"
+                Height="30"
+                Width="100" Click="VisualStudio_Click">
+        </Button>
+        <Button Grid.Row="3" Grid.Column="0"
+                Name="Steam"
+                Content="Steam"
+                Background="red"
+                FontWeight="Black"
+                Height="30"
+                Width="100" Click="Steam_Click" >
+        </Button>
+        <Button Grid.Row="4" Grid.Column="0"
+                Name="Discord"
+                Content="Discord"
+                Background="red"
+                FontWeight="Black"
+                Height="30"
+                Width="100" Click="Discord_Click" >
+        </Button>
+        <Button Grid.Row="3" Grid.Column="1"
+                Name="BattleNet"
+                Content="BattleNet"
+                Background="red"
+                FontWeight="Black"
+                Height="30"
+                Width="100" Click="BattleNet_Click" >
+        </Button>
+        <TextBlock Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="2"
+                   Name="games"
+                   Text="GAMES"
+                   TextAlignment="Center"
+                   Foreground="Yellow"
+                   FontSize="35"
+                   FontFamily="Algerian"
+                   Height="50"
+                   Width="210">
+        </TextBlock>
+        <Button Grid.Row="2" Grid.Column="4"
+                Name="worldofwarcraft"
+                Content="WoWko"
+                Background="red"
+                FontWeight="Black"
+                Height="30"
+                Width="100" Click="worldofwarcraft_Click">
+        </Button>
+        <Button Grid.Row="2" Grid.Column="5"
+                Name="LeagueOfLegends"
+                Content="LeagueOfShit"
+                Background="red"
+                FontWeight="Black"
+                Height="30"
+                Width="100" Click="LeagueOfLegends_Click">
+        </Button>
+        <Button Grid.Row="3" Grid.Column="5"
+                Name="minecraft"
+                Content="Minecraft"
+                Background="red"
+                FontWeight="Black"
+                Height="30"
+                Width="100" Click="minecraft_Click">
+        </Button>
+
+        <!--<Image Name="killerImage" Source="/images/backgound.png"  Grid.ColumnSpan="6" Grid.RowSpan="6" Panel.ZIndex="-1" />-->
+    </Grid>
+    </Border>
+</UserControl>
