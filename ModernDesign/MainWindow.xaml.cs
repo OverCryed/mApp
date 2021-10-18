@@ -46,6 +46,15 @@ namespace mApp
         {
             this.WindowState = WindowState.Minimized;
         }
+
+        //----------------------------------------------------------------------------------
+        //                  Drag and Drop App Window    ez pz :D
+        //----------------------------------------------------------------------------------
+
+        private void WindowMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
+        }
     }
 
 }
