@@ -10,7 +10,8 @@
         ResizeMode="NoResize"
         Background="Transparent"
         AllowsTransparency="True"
-        WindowStartupLocation="CenterScreen"
+        WindowStartupLocation="CenterOwner"
+        MouseLeftButtonDown="WindowMouseLeftButtonDown"
         Height="600" Width="920">
 
     <Window.DataContext>

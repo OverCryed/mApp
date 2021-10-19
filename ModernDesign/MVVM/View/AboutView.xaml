@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <StackPanel>
-        <TextBlock Text="Nechce sa mi tu moc pisat takze, toto okno je len cisto o tom kto to stvoril.."
+        <TextBlock Text="Nechce sa mi tu moc pisat takze, toto okno je len cisto o tom&#x0a;kto to stvoril.."
                    FontSize="22"
                    FontWeight="Bold"
                    Foreground="White"
