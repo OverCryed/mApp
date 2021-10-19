@@ -25,9 +25,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="images\dogy.png">
+    <Resource Include="images\dogy.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    </Resource>
     <Resource Include="images\backgound.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>

@@ -85,5 +85,27 @@ namespace mApp.MVVM.View
             kill = "Wow.exe";
             System.Diagnostics.Process.Start("taskkill", "/f /im " + kill);
         }
+
+        private void brave_Click(object sender, RoutedEventArgs e)
+        {
+            string kill;
+            kill = "brave.exe";
+            System.Diagnostics.Process.Start("taskkill", "/f /im " + kill);
+        }
+
+        private void outlook_Click(object sender, RoutedEventArgs e)
+        {
+            string kill;
+            kill = "OUTLOOK.EXE";
+            System.Diagnostics.Process.Start("taskkill", "/f /im " + kill);
+        }
+
+        private void teamviewer_Click(object sender, RoutedEventArgs e)
+        {
+            string kill;
+            kill = "TeamViewer.exe";
+            System.Diagnostics.Process.Start("taskkill", "/f /im " + kill);
+
+        }
     }
 }

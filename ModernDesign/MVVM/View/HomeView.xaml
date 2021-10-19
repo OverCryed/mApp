@@ -44,7 +44,8 @@
                                    FontSize="18"
                                    Margin="20,10,10,0" />
 
-                        <Image Width="141"
+                        <Image Name="havko" 
+                               Width="141"
                                Height="83"
                                HorizontalAlignment="Right"
                                VerticalAlignment="Bottom"
@@ -54,7 +55,8 @@
                 </Grid>
             </Border>
 
-            <Border Width="200"
+            <Border
+                    Width="200"
                     Height="200"
                     CornerRadius="10"
                     Margin="45,0,0,0">
@@ -65,6 +67,13 @@
                         <GradientStop Color="#3aa0ff" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
+
+                <StackPanel>
+                    <TextBlock Text="Blahoželám stal si sa&#x0a;vzácnym držiteľom&#x0a;tejto appky v alphe.&#x0a;Tak si to cen že to&#x0a;možeš mať a&#x0a;testovať."
+                               FontSize="20"
+                               Margin="10"
+                               Foreground="White"/>
+                </StackPanel>
             </Border>
 
          </StackPanel>

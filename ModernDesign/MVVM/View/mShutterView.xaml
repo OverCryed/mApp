@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="460" d:DesignWidth="680">
 
-    <Border CornerRadius="20" Background="Black">
+    <Border CornerRadius="20" Background="#13001a">
 
         <Grid>
             <TextBlock HorizontalAlignment="Center"
@@ -21,7 +21,7 @@
                 <Button Content="RESET" HorizontalAlignment="Left" Margin="33,253,0,0" VerticalAlignment="Top" Width="163" Height="60" FontFamily="Arial Black" FontSize="24" Background="#FF0003F7" Click="Button_Click_2"/>
                 <Button Content="ZRUSIT" HorizontalAlignment="Left" Margin="250,253,0,0" VerticalAlignment="Top" Width="163" Height="60" FontFamily="Arial Black" FontSize="24" Background="#FF34FF00" Click="Button_Click_1"/>
                 <Button Content="VYPNUT" HorizontalAlignment="Left" Margin="475,253,0,0" VerticalAlignment="Top" Width="163" Height="60" FontFamily="Arial Black" FontSize="24" Background="Red" Click="Button_Click"/>
-                <TextBlock HorizontalAlignment="Left" Margin="470,396,0,0" TextWrapping="Wrap" Text="Version 2.0.1.1 by Matus Laurinec" VerticalAlignment="Top" Width="182" Height="24" Foreground="White"/>
+               
                 <Slider HorizontalAlignment="Left" Name="slider2" Margin="33,335,0,0" VerticalAlignment="Top" Width="163" ValueChanged="Slider_ValueChanged_2" LargeChange="10" Maximum="7200" SmallChange="5" IsSnapToTickEnabled="True" TickFrequency="1" Value="-1"/>
                 <Slider HorizontalAlignment="Left" Name="slider1" Margin="475,335,0,0" VerticalAlignment="Top" Width="163" ValueChanged="Slider_ValueChanged_1" LargeChange="10" Maximum="7200" SmallChange="5" IsSnapToTickEnabled="True" TickFrequency="1" Value="-1"/>
                 <Label Content="" Name="label2" HorizontalAlignment="Left" Margin="74,358,0,0" VerticalAlignment="Top" Width="96" Height="35" Foreground="White" FontSize="24" FontFamily="Rockwell Extra Bold"/>
