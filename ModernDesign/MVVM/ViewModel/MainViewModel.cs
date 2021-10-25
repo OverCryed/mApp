@@ -11,12 +11,14 @@ namespace mApp.MVVM.ViewModel
         public RelayCommand KillerViewCommand { get; set; }
         public RelayCommand NOterViewCommand { get; set; }
         public RelayCommand AboutViewCommand { get; set; }
+        public RelayCommand WifiPassViewCommand { get; set; }
 
         public HomeViewModel HomeVM { get; set; }
         public mShutterViewModel mShutterVM { get; set; }
         public KillerViewModel KillerVM { get; set; }
         public NoterViewModel NoterVM { get; set; }
         public AboutViewModel AboutVM { get; set; }
+        public WifiPassViewModel WifiPassVM { get; set; }
        
 
 
@@ -39,6 +41,7 @@ namespace mApp.MVVM.ViewModel
             KillerVM = new KillerViewModel();
             NoterVM = new NoterViewModel();
             AboutVM = new AboutViewModel();
+            WifiPassVM = new WifiPassViewModel();
 
             CurrentView = HomeVM;
 
@@ -65,6 +68,11 @@ namespace mApp.MVVM.ViewModel
             AboutViewCommand = new RelayCommand(o =>
             {
                 CurrentView = AboutVM;
+            });
+
+            WifiPassViewCommand = new RelayCommand(o =>
+            {
+                CurrentView = WifiPassVM;
             });
         }
     }
