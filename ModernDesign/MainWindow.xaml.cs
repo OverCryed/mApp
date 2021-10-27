@@ -55,6 +55,12 @@ namespace mApp
         {
             DragMove();
         }
+
+        private void user_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            LoginWindows loginWin = new LoginWindows();
+            loginWin.Show();
+        }
     }
 
 }

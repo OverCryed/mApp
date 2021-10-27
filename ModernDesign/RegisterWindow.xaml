@@ -1,0 +1,129 @@
+﻿<Window x:Class="mApp.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:mApp"
+        Background="Transparent"
+        ResizeMode="NoResize"
+        AllowsTransparency="True"
+        WindowStyle="None"
+        mc:Ignorable="d"
+        Title="Login" Height="400" Width="300">
+
+    <Border CornerRadius="20" Background="White">
+
+        <Grid>
+            <TextBlock Text="Register"
+                   FontSize="60"
+                   FontWeight="SemiBold"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top"
+                   Margin="0,50,0,0" />
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="1">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="Name"
+                               FontSize="23"
+                               FontWeight="DemiBold"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Left"
+                               Grid.Row="0"
+                               Margin="50,0,0,0"
+                               Grid.Column="0" />
+
+                    <TextBlock Text="Password"
+                               FontSize="23"
+                               Grid.Row="1"
+                               Margin="50,0,0,0"
+                               FontWeight="DemiBold"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Center"
+                               Grid.Column="0" />
+
+                    <TextBlock Text="PasswordRe"
+                               FontSize="23"
+                               Grid.Row="2"
+                               Margin="50,0,0,0"
+                               FontWeight="DemiBold"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Center"
+                               Grid.Column="0" />
+
+                    <TextBox Name="name"
+                             FontSize="18"
+                             FontWeight="DemiBold"
+                             VerticalContentAlignment="Center"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Center"
+                             Margin="5"
+                             Width="130"
+                             Grid.Row="0"
+                             Grid.Column="1" />
+
+                    <TextBox Name="password"
+                             FontSize="18"
+                             FontWeight="DemiBold"
+                             Margin="5"
+                             VerticalContentAlignment="Center"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Center"
+                             Width="130"
+                             Grid.Row="1"
+                             Grid.Column="1" />
+
+                    <TextBox Name="password2"
+                             FontSize="18"
+                             FontWeight="DemiBold"
+                             Margin="5"
+                             VerticalContentAlignment="Center"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Center"
+                             Width="130"
+                             Grid.Row="2"
+                             Grid.Column="1" />
+
+
+                    <Button Name="Register"
+                            Content="Register"
+                            FontSize="20"
+                            FontWeight="Bold"
+                            Width="100"
+                            Height="40"
+                            Grid.Column="1"
+                            Grid.Row="3" />
+
+                    <Button Name="LogIn"
+                            Content="LogIn"
+                            FontSize="20"
+                            FontWeight="Bold"
+                            Width="100"
+                            Height="40"
+                            Grid.Column="0"
+                            Grid.Row="3" Click="LogIn_Click" />
+
+                </Grid>
+            </Grid>
+        </Grid>
+
+    </Border>
+</Window>
