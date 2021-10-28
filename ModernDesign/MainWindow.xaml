@@ -117,7 +117,7 @@
                    Margin="5"
                    Grid.Column="3" MouseDown="redCross_MouseDown"/>
 
-            <Image Name="minimize"
+                <Image Name="minimize"
                    Source="/images/minimize.png" 
                    Height="30" 
                    Width="30" 
@@ -125,14 +125,6 @@
                    VerticalAlignment="Top" 
                    Margin="5,5,40,5"
                    Grid.Column="3" MouseDown="minimize_MouseDown"/>
-
-                <Image Name="user" 
-                       Source="/images/users.png"
-                       HorizontalAlignment="Right"
-                       VerticalAlignment="Center"
-                       Margin="5,5,30,5"
-                       Grid.Row="0"
-                       Grid.Column="2" MouseLeftButtonDown="user_MouseLeftButtonDown"/>
 
                 <!--<TextBlock Name="User"
                            Text="Login"
@@ -174,6 +166,53 @@
                             Grid.Column="1"
                             Margin="10"
                             Content="{Binding CurrentView}"/>
+
+
+
+
+            <Grid Grid.Row="1" Grid.Column="0" VerticalAlignment="Bottom" Height="80">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Image Name="user" 
+                       Source="/images/users.png"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Margin="5,0,0,0"
+                       Grid.Row="1"
+                       Grid.Column="0" MouseLeftButtonDown="user_MouseLeftButtonDown"/>
+
+                <TextBlock Text="Logged as:"
+                           FontSize="15"
+                           FontWeight="Bold"
+                           TextAlignment="Center"
+                           Grid.ColumnSpan="2"
+                           Margin="5,0,0,0"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Foreground="White" />
+
+                <TextBlock Name="LoggedAs"
+                           FontSize="18"
+                           Text="none"
+                           Foreground="White"
+                           FontWeight="Bold"
+                           Margin="35,0,0,0"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Grid.Column="0"
+                           Grid.Row="1"
+                           Grid.ColumnSpan="2" />
+            </Grid>
+
         </Grid>
     </Border>
 

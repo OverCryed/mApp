@@ -21,9 +21,15 @@
   <ItemGroup>
     <None Remove="images\backgound.png" />
     <None Remove="images\dogy.png" />
+    <None Remove="images\locker.png" />
     <None Remove="images\minimize.png" />
     <None Remove="images\redCross.png" />
+    <None Remove="images\userko.png" />
     <None Remove="images\users.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.14.0-beta1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -33,10 +39,16 @@
     <Resource Include="images\backgound.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="images\locker.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="images\minimize.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\redCross.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\userko.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\users.png">

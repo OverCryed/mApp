@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+
 
 namespace mApp
 {
@@ -26,6 +18,35 @@ namespace mApp
         {
             RegisterWindow regWin = new RegisterWindow();
             regWin.Show();
+            this.Close();
+        }
+
+        private void LogIn_Click(object sender, RoutedEventArgs e)
+        {
+            MongoCRUD db = new MongoCRUD("mAppDataBase");
+
+            var recs = db.LoadRecords<INformations>("Users");
+
+            foreach (var rec in recs)    //prehladavam zaznamy v DB
+            {
+                if (rec.email == name.Text && rec.password == password.Password) //ak to v kolonke meno  sa zhoduje so zaznamom v DB tak + heslo tak to prejde
+                {
+                    MessageBox.Show("Uspesne prihlaseny");
+                    this.Close();
+                    return;
+                }
+                else
+                {
+                    name.BorderBrush = System.Windows.Media.Brushes.Red;
+                    password.BorderBrush = System.Windows.Media.Brushes.Red;
+                    MessageBox.Show("Neplatne meno alebo heslo");
+                    
+                }
+            }
+        }
+
+        private void redCross_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
             this.Close();
         }
     }

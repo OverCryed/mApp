@@ -11,12 +11,21 @@
         mc:Ignorable="d"
         Title="Login" Height="400" Width="300">
 
-    <Border CornerRadius="20" Background="White">
+    <Border CornerRadius="20" Background="LightBlue">
 
         <Grid>
+
+            <Image Name="redCross"
+                   Source="/images/redCross.png" 
+                   Height="30" 
+                   Width="30" 
+                   HorizontalAlignment="Right" 
+                   VerticalAlignment="Top" 
+                   Margin="5" MouseLeftButtonDown="redCross_MouseLeftButtonDown" />
+
             <TextBlock Text="Register"
                    FontSize="60"
-                   FontWeight="SemiBold"
+                   FontWeight="Bold"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Top"
                    Margin="0,50,0,0" />
@@ -31,8 +40,9 @@
                 <Grid Grid.Row="1">
 
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="75*" />
+                        <ColumnDefinition Width="31*" />
+                        <ColumnDefinition Width="44*"/>
                     </Grid.ColumnDefinitions>
 
                     <Grid.RowDefinitions>
@@ -44,30 +54,30 @@
 
                     <TextBlock Text="Name"
                                FontSize="23"
-                               FontWeight="DemiBold"
+                               FontWeight="Bold"
                                VerticalAlignment="Center"
                                HorizontalAlignment="Left"
-                               Grid.Row="0"
-                               Margin="50,0,0,0"
+                               Margin="40,0,0,0"
                                Grid.Column="0" />
 
                     <TextBlock Text="Password"
                                FontSize="23"
                                Grid.Row="1"
-                               Margin="50,0,0,0"
-                               FontWeight="DemiBold"
+                               Margin="40,0,0,0"
+                               Grid.ColumnSpan="2"
+                               FontWeight="Bold"
                                HorizontalAlignment="Left"
                                VerticalAlignment="Center"
                                Grid.Column="0" />
 
-                    <TextBlock Text="PasswordRe"
+                    <TextBlock Text="Password"
                                FontSize="23"
                                Grid.Row="2"
-                               Margin="50,0,0,0"
-                               FontWeight="DemiBold"
+                               Margin="40,0,0,0"
+                               FontWeight="Bold"
                                HorizontalAlignment="Left"
                                VerticalAlignment="Center"
-                               Grid.Column="0" />
+                               Grid.Column="0" Grid.ColumnSpan="2" />
 
                     <TextBox Name="name"
                              FontSize="18"
@@ -75,32 +85,34 @@
                              VerticalContentAlignment="Center"
                              HorizontalAlignment="Left"
                              VerticalAlignment="Center"
-                             Margin="5"
+                             Style="{StaticResource MyTextbox}"
+                             Margin="10,0,0,0"
                              Width="130"
-                             Grid.Row="0"
-                             Grid.Column="1" />
+                             Grid.Column="1" Grid.ColumnSpan="2" />
 
-                    <TextBox Name="password"
-                             FontSize="18"
-                             FontWeight="DemiBold"
-                             Margin="5"
+                    <PasswordBox Name="password"
+                             FontSize="11"
+                             Margin="10,0,0,0"
                              VerticalContentAlignment="Center"
                              HorizontalAlignment="Left"
                              VerticalAlignment="Center"
+                             Style="{StaticResource MyPasswordbox}"
                              Width="130"
+                             Height="23"
                              Grid.Row="1"
-                             Grid.Column="1" />
+                             Grid.Column="1" Grid.ColumnSpan="2" />
 
-                    <TextBox Name="password2"
-                             FontSize="18"
-                             FontWeight="DemiBold"
-                             Margin="5"
+                    <PasswordBox Name="password2"
+                             FontSize="11"
+                             Margin="10,0,0,0"
                              VerticalContentAlignment="Center"
                              HorizontalAlignment="Left"
                              VerticalAlignment="Center"
+                             Style="{StaticResource MyPasswordbox}"
                              Width="130"
+                             Height="23"
                              Grid.Row="2"
-                             Grid.Column="1" />
+                             Grid.Column="1" Grid.ColumnSpan="2" />
 
 
                     <Button Name="Register"
@@ -108,18 +120,42 @@
                             FontSize="20"
                             FontWeight="Bold"
                             Width="100"
-                            Height="40"
+                            Height="30"
+                            Style="{StaticResource MyButton}"
                             Grid.Column="1"
-                            Grid.Row="3" />
+                            Grid.Row="3" Grid.ColumnSpan="2" Margin="25,27,25,28" Click="Register_Click" />
 
                     <Button Name="LogIn"
                             Content="LogIn"
                             FontSize="20"
                             FontWeight="Bold"
                             Width="100"
-                            Height="40"
+                            Grid.ColumnSpan="2"
+                            Style="{StaticResource MyButton}"
+                            Height="30"
                             Grid.Column="0"
-                            Grid.Row="3" Click="LogIn_Click" />
+                            Grid.Row="3" Click="LogIn_Click" Margin="25,27,25,28" />
+
+                    <Image Name="userko"
+                           Source="/images/userko.png"
+                           HorizontalAlignment="Left"
+                           Margin="4"
+                           Grid.Row="0"
+                           Grid.Column="0"/>
+
+                    <Image Name="locker"
+                           Source="/images/locker.png"
+                           HorizontalAlignment="Left"
+                           Margin="7"
+                           Grid.Row="1"
+                           Grid.Column="0"/>
+
+                    <Image Name="locker2"
+                           Source="/images/locker.png"
+                           HorizontalAlignment="Left"
+                           Margin="7"
+                           Grid.Row="2"
+                           Grid.Column="0"/>
 
                 </Grid>
             </Grid>
