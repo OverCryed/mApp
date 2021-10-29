@@ -84,6 +84,14 @@
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding  WifiPassViewCommand}"/>
 
+                <RadioButton Content="Console"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="20"
+                             FontWeight="Bold"
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding  ConsoleCommand}"/>
+
                 <RadioButton Content="About"
                              Height="50"
                              Foreground="White"
@@ -186,7 +194,7 @@
                        Source="/images/users.png"
                        HorizontalAlignment="Left"
                        VerticalAlignment="Center"
-                       Margin="5,0,0,0"
+                       Margin="10,0,0,0"
                        Grid.Row="1"
                        Grid.Column="0" MouseLeftButtonDown="user_MouseLeftButtonDown"/>
 
@@ -195,7 +203,7 @@
                            FontWeight="Bold"
                            TextAlignment="Center"
                            Grid.ColumnSpan="2"
-                           Margin="5,0,0,0"
+                           Margin="10,0,0,0"
                            HorizontalAlignment="Left"
                            VerticalAlignment="Center"
                            Foreground="White" />

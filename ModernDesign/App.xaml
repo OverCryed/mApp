@@ -40,6 +40,10 @@
                 <view:WifiPassView/>
             </DataTemplate>
 
+            <DataTemplate DataType="{x:Type viewModel:ConsoleViewModel}">
+                <view:ConsoleView/>
+            </DataTemplate>
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -85,7 +85,7 @@
                              VerticalContentAlignment="Center"
                              HorizontalAlignment="Left"
                              VerticalAlignment="Center"
-                             Style="{StaticResource MyTextbox}"
+                             
                              Margin="10,0,0,0"
                              Width="130"
                              Grid.Column="1" Grid.ColumnSpan="2" />
@@ -96,7 +96,7 @@
                              VerticalContentAlignment="Center"
                              HorizontalAlignment="Left"
                              VerticalAlignment="Center"
-                             Style="{StaticResource MyPasswordbox}"
+                             
                              Width="130"
                              Height="23"
                              Grid.Row="1"
@@ -108,7 +108,7 @@
                              VerticalContentAlignment="Center"
                              HorizontalAlignment="Left"
                              VerticalAlignment="Center"
-                             Style="{StaticResource MyPasswordbox}"
+                             
                              Width="130"
                              Height="23"
                              Grid.Row="2"

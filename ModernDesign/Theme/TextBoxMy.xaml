@@ -14,7 +14,7 @@
                                  Background="Transparent"
                                  Margin="5,5,5,5"
                                  FontSize="11"
-                                 x:Name="TextBoxik" />
+                                 x:Name="name" />
 
                             <TextBlock IsHitTestVisible="False"
                                       Text="FerkoMrkva@gmail.com"
@@ -26,7 +26,7 @@
                                 <TextBlock.Style>
                                     <Style TargetType="{x:Type TextBlock}">
                                         <Style.Triggers>
-                                            <DataTrigger Binding="{Binding Text, ElementName=TextBoxik}" Value="">
+                                            <DataTrigger Binding="{Binding Text, ElementName=name}" Value="">
                                                 <Setter Property="Visibility" Value="Visible"/>
                                                 <Setter Property="Margin" Value="10,0,0,0" />
                                             </DataTrigger>
@@ -35,6 +35,8 @@
                                     </Style>
                                 </TextBlock.Style>
                             </TextBlock>
+                            
+                            
                         </Grid>
                     </Border>
                 </ControlTemplate>

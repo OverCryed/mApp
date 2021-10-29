@@ -14,9 +14,13 @@ namespace mApp
     /// </summary>
     public partial class MainWindow : Window 
     {
+        bool startWork = true;
+        int callsWriteToConsole;
         public MainWindow()
         {
             InitializeComponent();
+
+          //  ConsoleAllocator.ShowConsoleWindow();     //toto len zapne konzolu, to mozem urobyt aj v settings...
 
             ((MainWindow)System.Windows.Application.Current.MainWindow).UpdateLayout();
 
@@ -56,6 +60,7 @@ namespace mApp
             LoginWindows loginWin = new LoginWindows();
             loginWin.Show();
         }
+
     }
 
 }
