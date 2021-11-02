@@ -40,7 +40,8 @@ namespace mApp
                     name.BorderBrush = System.Windows.Media.Brushes.Red;
                     password.BorderBrush = System.Windows.Media.Brushes.Red;
                     MessageBox.Show("Neplatne meno alebo heslo");
-                    
+                    AllMethods.WriteToConsole("You cant log in due to wrong username or password");
+
                 }
             }
         }

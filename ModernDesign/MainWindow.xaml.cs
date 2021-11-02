@@ -14,15 +14,13 @@ namespace mApp
     /// </summary>
     public partial class MainWindow : Window 
     {
-        bool startWork = true;
-        int callsWriteToConsole;
         public MainWindow()
         {
             InitializeComponent();
 
           //  ConsoleAllocator.ShowConsoleWindow();     //toto len zapne konzolu, to mozem urobyt aj v settings...
 
-            ((MainWindow)System.Windows.Application.Current.MainWindow).UpdateLayout();
+            //((MainWindow)System.Windows.Application.Current.MainWindow).UpdateLayout();
 
             DispatcherTimer timer = new DispatcherTimer();
             timer.Tick += new EventHandler(UpdateTimer_Tick);
@@ -53,6 +51,7 @@ namespace mApp
         private void WindowMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();
+            AllMethods.WriteToConsole("trying something, hold on");
         }
 
         private void user_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)

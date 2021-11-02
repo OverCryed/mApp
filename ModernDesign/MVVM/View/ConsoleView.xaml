@@ -11,14 +11,17 @@
     <Border CornerRadius="20">
         <Grid>
             <TextBox Background="Black"
+                     Foreground="White"
+                     FontWeight="Bold"
+                     FontSize="15"
                      AcceptsReturn="True"
                      TextWrapping="Wrap"
                      Margin="5"
                      IsReadOnly="True"
                      VerticalScrollBarVisibility="Auto"
                      HorizontalScrollBarVisibility="Auto"
-                     x:Name="txtBox_console"
-                     Text="{Binding Path=txtBox_console.Text}"/>
+                     Text="{Binding Path= txtBox_consoleText}"
+                     x:Name="txtBox_console"/>
         </Grid>
     </Border>
 </UserControl>
