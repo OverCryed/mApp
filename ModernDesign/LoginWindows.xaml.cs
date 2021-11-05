@@ -14,12 +14,12 @@ namespace mApp
             InitializeComponent();
         }
 
-        private void Register_Click(object sender, RoutedEventArgs e)
-        {
-            RegisterWindow regWin = new RegisterWindow();
-            regWin.Show();
-            this.Close();
-        }
+        //private void Register_Click(object sender, RoutedEventArgs e)
+        //{
+        //    RegisterWindow regWin = new RegisterWindow();
+        //    regWin.Show();
+        //    this.Close();
+        //}
 
         private void LogIn_Click(object sender, RoutedEventArgs e)
         {
@@ -31,23 +31,30 @@ namespace mApp
             {
                 if (rec.email == name.Text && rec.password == password.Password) //ak to v kolonke meno  sa zhoduje so zaznamom v DB tak + heslo tak to prejde
                 {
-                    MessageBox.Show("Uspesne prihlaseny");
+                    name.BorderBrush = System.Windows.Media.Brushes.Black;
+                    password.BorderBrush = System.Windows.Media.Brushes.Black;
+                    MessageBox.Show("Parada, prihlaseny !");
+                    AllMethods.WriteToConsole("Successfully loged id.");
                     this.Close();
-                    return;
                 }
-                else
+                else if (rec.email != name.Text && rec.password != password.Password)
                 {
                     name.BorderBrush = System.Windows.Media.Brushes.Red;
                     password.BorderBrush = System.Windows.Media.Brushes.Red;
-                    MessageBox.Show("Neplatne meno alebo heslo");
                     AllMethods.WriteToConsole("You cant log in due to wrong username or password");
-
                 }
             }
         }
 
         private void redCross_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
+            this.Close();
+        }
+
+        private void register_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            RegisterWindow regWin = new RegisterWindow();
+            regWin.Show();
             this.Close();
         }
     }

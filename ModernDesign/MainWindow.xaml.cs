@@ -51,7 +51,6 @@ namespace mApp
         private void WindowMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();
-            AllMethods.WriteToConsole("trying something, hold on");
         }
 
         private void user_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)

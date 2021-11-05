@@ -6,11 +6,11 @@
         <Style.Setters>
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="TextBlock.TextAlignment" Value="Center" />
-            <Setter Property="TextBlock.Foreground" Value="White" />
+            <Setter Property="TextBlock.Foreground" Value="#FDFEFE" />
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
-                        <Border CornerRadius="10" Background="Gray">
+                        <Border CornerRadius="10" Background="#2ECC71">
                             <ContentPresenter Content="{TemplateBinding Content}" />
                         </Border>
                     </ControlTemplate>

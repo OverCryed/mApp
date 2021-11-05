@@ -44,6 +44,7 @@ namespace mApp
                 password.BorderBrush = System.Windows.Media.Brushes.Red;
                 password2.BorderBrush = System.Windows.Media.Brushes.Red;
                 MessageBox.Show("Hesla sa nezhoduju !");
+                AllMethods.WriteToConsole("passwords are not same.");
 
                 return;
             }
@@ -53,6 +54,7 @@ namespace mApp
                 password.BorderBrush = System.Windows.Media.Brushes.Red;
                 password2.BorderBrush = System.Windows.Media.Brushes.Red;
                 MessageBox.Show("minimalna dlzka hesla je 5 znakov !");
+                AllMethods.WriteToConsole("minimum length for password is 5 char.");
 
                 return;
             }
@@ -61,9 +63,10 @@ namespace mApp
             {
                 name.BorderBrush = System.Windows.Media.Brushes.Red;
                 MessageBox.Show("Zadaj meno !");
-
+                AllMethods.WriteToConsole("wrong or empty name.");
                 return;
             }
+
 
             try
             {
@@ -73,11 +76,13 @@ namespace mApp
                 password2.Password = "";
                 name.Text = "";
 
-                MessageBox.Show("Uspesne zaregistrovany");
+                MessageBox.Show("Uspesne zaregistrovany!");
+                AllMethods.WriteToConsole("Successfully registered.");
             }
             catch (Exception)
             {
                 MessageBox.Show("Tento mail je uz pouzity!");
+                AllMethods.WriteToConsole("This email andress is alreadt used.");
             }
         }
 

@@ -16,7 +16,7 @@ namespace mApp
         {
             if (startWork == true)
             {
-                txtBox_consoleText = txtBox_consoleText + text + "\n";
+                txtBox_consoleText = txtBox_consoleText + "Console: " + text + "\n";
                 OnPropertyChanged(txtBox_consoleText);
             }
 
