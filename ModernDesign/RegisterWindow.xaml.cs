@@ -72,9 +72,7 @@ namespace mApp
             {
                 db.InsertRecord("Users", person);
 
-                password.Password = "";
-                password2.Password = "";
-                name.Text = "";
+                this.Close();
 
                 MessageBox.Show("Uspesne zaregistrovany!");
                 AllMethods.WriteToConsole("Successfully registered.");

@@ -2,10 +2,12 @@
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Threading;
+using System.IO;
 using MongoDB.Driver;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using System.Collections.Generic;
+using System.Windows.Controls;
 
 namespace mApp 
 {
@@ -34,7 +36,7 @@ namespace mApp
             date.Text = DateTime.Now.ToLongDateString();
         }
 
-        private void redCross_MouseDown(object sender, MouseButtonEventArgs e)   //toto mam vlastne vypnutie appky, po stlaceni na X
+        private void redCross_MouseDown(object sender, MouseButtonEventArgs e)   //toto mam vlastne vypnutie appky (okna), po stlaceni na X
         {
             this.Close();
         }
@@ -59,6 +61,24 @@ namespace mApp
             loginWin.Show();
         }
 
+
+
+
+        //----------------------------------------------------------------------------------
+        //                           ? Admin MOD ?
+        //----------------------------------------------------------------------------------
+
+        private void AdminButton_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.K)
+            {
+                AdminButton.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                AdminButton.Visibility = Visibility.Hidden;
+            }
+        }
     }
 
 }

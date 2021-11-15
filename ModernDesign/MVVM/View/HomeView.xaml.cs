@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MongoDB.Bson;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -21,6 +22,17 @@ namespace mApp.MVVM.View
         public HomeView()
         {
             InitializeComponent();
+
+            MongoCRUD db = new MongoCRUD("mAppDataBase");
+
+            var _texts = db.LoadRecords<TextModel>("Texts");
+
+            foreach (var text in _texts)
+            {
+                Nadpis.Text = text.nadpi1;
+            }
+
+            //Nadpis.Text = _texts.ToString() ;
         }
     }
 }

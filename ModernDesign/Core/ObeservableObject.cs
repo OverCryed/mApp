@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 
 namespace mApp.Core
 {
-    class ObeservableObject : INotifyPropertyChanged
+   public class ObeservableObject : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 

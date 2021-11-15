@@ -3,9 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:mApp.MVVM.View"
+             xmlns:local="clr-namespace:mApp.MVVM.View" xmlns:local1="clr-namespace:mApp"
              mc:Ignorable="d" 
              d:DesignHeight="460" d:DesignWidth="800">
+
+    <UserControl.DataContext>
+        <local1:TextModel/>
+    </UserControl.DataContext>
+    
     <StackPanel>
         <TextBlock Text="Este neviem na co presne to bude"
                        Foreground="White"
@@ -34,7 +39,8 @@
 
                 <Grid>
                     <StackPanel>
-                        <TextBlock Text="Robim predelenie&#x0a;do riadkov ty kokso."
+                        <TextBlock Text=""
+                                   x:Name="Nadpis"
                                    Foreground="White"
                                    FontSize="28"
                                    Margin="20,10,10,0" />
