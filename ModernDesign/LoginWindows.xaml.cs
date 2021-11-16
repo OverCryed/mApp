@@ -1,4 +1,5 @@
-﻿using System;
+﻿using mApp.MVVM.ViewModel;
+using System;
 using System.Windows;
 
 
@@ -35,12 +36,12 @@ namespace mApp
                     password.BorderBrush = System.Windows.Media.Brushes.Black;
                     MessageBox.Show("Parada, prihlaseny !");
                     AllMethods.WriteToConsole("Successfully logged as " + rec.email);
-                    Name = rec.email;
+                    // Name = rec.email; //toto zmaz ak tak
 
-                    //MainWindow main = new MainWindow()
-                    //{
-                    //    Name = rec.email,
-                    //};
+                    MainViewModel main = new MainViewModel()
+                    {
+                        Name = rec.email,
+                    };
 
                     this.Close();
 
