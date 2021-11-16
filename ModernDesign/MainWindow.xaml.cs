@@ -19,6 +19,9 @@ namespace mApp
         public MainWindow()
         {
             InitializeComponent();
+            //this.DataContext = new UserName();
+
+            //AdminButton.Visibility = Visibility.Hidden;
 
           //  ConsoleAllocator.ShowConsoleWindow();     //toto len zapne konzolu, to mozem urobyt aj v settings...
 
@@ -65,20 +68,22 @@ namespace mApp
 
 
         //----------------------------------------------------------------------------------
-        //                           ? Admin MOD ?
+        //                           ? Admin Mod ?
         //----------------------------------------------------------------------------------
 
-        private void AdminButton_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.Key == Key.K)
-            {
-                AdminButton.Visibility = Visibility.Visible;
-            }
-            else
-            {
-                AdminButton.Visibility = Visibility.Hidden;
-            }
-        }
+        //private void Window_KeyDown(object sender, KeyEventArgs e)
+        //{
+        ////    if (e.Key != Key.K)
+        ////    {
+        ////        e.Handled = true;
+        ////        AdminButton.Visibility = Visibility.Hidden;
+        ////    }
+        ////    else
+        ////    {
+        ////        e.Handled = true;
+        ////        AdminButton.Visibility = Visibility.Visible;
+        ////    }
+        //}
     }
 
 }

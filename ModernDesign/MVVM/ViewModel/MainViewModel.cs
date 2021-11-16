@@ -6,6 +6,15 @@ namespace mApp.MVVM.ViewModel
     class MainViewModel : ObeservableObject
     {
 
+        private string _name;
+
+        public string Name
+        {
+            get { return _name; }
+            set { _name = value; }
+        }
+
+
         public RelayCommand HomeViewCommand { get; set; }
         public RelayCommand mShutterViewCommand { get; set; }
         public RelayCommand KillerViewCommand { get; set; }

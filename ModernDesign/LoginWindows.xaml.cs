@@ -31,11 +31,20 @@ namespace mApp
             {
                 if (rec.email == name.Text && rec.password == password.Password) //ak to v kolonke meno  sa zhoduje so zaznamom v DB tak + heslo tak to prejde
                 {
-                    name.BorderBrush = System.Windows.Media.Brushes.Black;
+                    name.BorderBrush = System.Windows.Media.Brushes.Black;      //len farbicky
                     password.BorderBrush = System.Windows.Media.Brushes.Black;
                     MessageBox.Show("Parada, prihlaseny !");
-                    AllMethods.WriteToConsole("Successfully loged id.");
+                    AllMethods.WriteToConsole("Successfully logged as " + rec.email);
+                    Name = rec.email;
+
+                    //MainWindow main = new MainWindow()
+                    //{
+                    //    Name = rec.email,
+                    //};
+
                     this.Close();
+
+                    return;
                 }
                 else if (rec.email != name.Text && rec.password != password.Password)
                 {
