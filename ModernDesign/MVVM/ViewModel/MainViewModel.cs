@@ -3,7 +3,7 @@ using System;
 
 namespace mApp.MVVM.ViewModel
 {
-    class MainViewModel : ObeservableObject
+   class MainViewModel : ObeservableObject
     {
 
         private string _name;
@@ -11,9 +11,12 @@ namespace mApp.MVVM.ViewModel
         public string Name
         {
             get { return _name; }
-            set { _name = value; }
+            set { 
+                _name = value;
+                OnPropertyChanged();
+            }
+            
         }
-
 
         public RelayCommand HomeViewCommand { get; set; }
         public RelayCommand mShutterViewCommand { get; set; }
@@ -49,6 +52,7 @@ namespace mApp.MVVM.ViewModel
 
         public MainViewModel()
         {
+
             HomeVM = new HomeViewModel();
             mShutterVM = new mShutterViewModel();
             KillerVM = new KillerViewModel();
@@ -99,6 +103,7 @@ namespace mApp.MVVM.ViewModel
             {
                 CurrentView = AdminVM;
             });
+
         }
     }
 }
