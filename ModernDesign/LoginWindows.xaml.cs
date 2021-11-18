@@ -40,7 +40,7 @@ namespace mApp
 
                     MainViewModel main = new MainViewModel()
                     {
-                        Name = rec.email,
+                        Name = rec.email
                     };
 
                     this.Close();

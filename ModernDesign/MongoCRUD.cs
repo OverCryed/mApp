@@ -29,10 +29,29 @@ namespace mApp
             return collection.Find(new BsonDocument()).ToList();
         }
 
-        public void InsertRec<T>(string table, T record)
+        public T LoadRecordById<T>(string table, string email)
         {
             var collection = db.GetCollection<T>(table);
-            collection.InsertOne(record);
+            var filter = Builders<T>.Filter.Eq("email", email);
+
+            return collection.Find(filter).First();
+        }
+
+        //public void UpsertRecord<T>(string table, string nadpi1, T record)
+        //{
+        //    var collection = db.GetCollection<T>(table);
+
+        //    var result = collection.ReplaceOne(
+        //        new BsonDocument("nadpi1", id),
+        //        record,
+        //        new UpdateOptions { IsUpsert = true });
+        //}
+
+        public void DeleteRecord<T>(string table, Guid nadpis)
+        {
+            var collection = db.GetCollection<T>(table);
+            var filter = Builders<T>.Filter.Eq("nadpi1", nadpis);
+            collection.DeleteOne(filter);
         }
 
 

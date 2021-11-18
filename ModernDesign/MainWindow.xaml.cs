@@ -19,7 +19,7 @@ namespace mApp
         public MainWindow()
         {
             InitializeComponent();
-            //this.DataContext = new UserName();
+            //this.DataContext = new User();
 
             //AdminButton.Visibility = Visibility.Hidden;
 

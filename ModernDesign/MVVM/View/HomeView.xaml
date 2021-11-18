@@ -39,13 +39,14 @@
 
                 <Grid>
                     <StackPanel>
-                        <TextBlock Text=""
-                                   x:Name="Nadpis"
+                        <TextBlock Text="Co je nove ?"
+                                   x:Name="MainNadpis"
                                    Foreground="White"
                                    FontSize="28"
                                    Margin="20,10,10,0" />
 
-                        <TextBlock Text="A je to celkom divne musim povedat.."
+                        <TextBlock Text=""
+                                   x:Name="Nadpis"
                                    Foreground="White"
                                    FontSize="18"
                                    Margin="20,10,10,0" />

@@ -19,7 +19,7 @@
                      IsReadOnly="True"
                      VerticalScrollBarVisibility="Auto"
                      HorizontalScrollBarVisibility="Auto"
-                     Text="{Binding Path= txtBox_consoleText}"
+                     Text="{Binding Path= txtBox_consoleText, UpdateSourceTrigger=PropertyChanged}"
                      x:Name="txtBox_console"/>
         </Grid>
     </Border>

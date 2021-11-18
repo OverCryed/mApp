@@ -38,12 +38,18 @@ namespace mApp.MVVM.View
                 nadpi1 = Text1.Text
             };
 
+            INformations info = new INformations
+            {
+                email = "matus",
+            };
+
             try
             {
+               // var oneRec = db.LoadRecordById<INformations>("Users", new string("m"));   nejde to !!!
                 db.InsertRecord("Texts", text);
 
-                MessageBox.Show("Uspesne zapisany Nadpis1");
-                AllMethods.WriteToConsole("Nadpis one writted.");
+                MessageBox.Show("Zapisane");
+                AllMethods.WriteToConsole("Successfully writted.");
             }
             catch (Exception)
             {
