@@ -1,22 +1,25 @@
 ﻿using mApp.Core;
 using System;
+using System.Windows;
 
 namespace mApp.MVVM.ViewModel
 {
    class MainViewModel : ObeservableObject
     {
 
-        private string _name;
+        //private string _name;
+        //public string Name
+        //{
+        //    get { return _name; }
+        //    set
+        //    {
+        //        _name = value;
+        //        OnPropertyChanged();
+        //    }
 
-        public string Name
-        {
-            get { return _name; }
-            set { 
-                _name = value;
-                OnPropertyChanged();
-            }
-            
-        }
+        //}
+
+        public static string Name { get; set; }
 
         public RelayCommand HomeViewCommand { get; set; }
         public RelayCommand mShutterViewCommand { get; set; }
@@ -52,6 +55,8 @@ namespace mApp.MVVM.ViewModel
 
         public MainViewModel()
         {
+
+            Name = LoginWindows.x;
 
             HomeVM = new HomeViewModel();
             mShutterVM = new mShutterViewModel();

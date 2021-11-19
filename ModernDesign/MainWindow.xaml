@@ -218,7 +218,7 @@
                            VerticalAlignment="Center"
                            Foreground="White" />
 
-                <TextBlock Name="User"
+                <TextBlock Name="Users"
                            FontSize="18"
                            Text="{Binding Path=Name, UpdateSourceTrigger=PropertyChanged}"
                            Foreground="White"

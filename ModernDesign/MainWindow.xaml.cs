@@ -8,6 +8,7 @@ using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using System.Collections.Generic;
 using System.Windows.Controls;
+using System.Threading;
 
 namespace mApp 
 {
@@ -20,10 +21,9 @@ namespace mApp
         {
             InitializeComponent();
             //this.DataContext = new User();
-
             //AdminButton.Visibility = Visibility.Hidden;
 
-          //  ConsoleAllocator.ShowConsoleWindow();     //toto len zapne konzolu, to mozem urobyt aj v settings...
+            //  ConsoleAllocator.ShowConsoleWindow();     //toto len zapne konzolu, to mozem urobyt aj v settings...
 
             //((MainWindow)System.Windows.Application.Current.MainWindow).UpdateLayout();
 
@@ -31,6 +31,20 @@ namespace mApp
             timer.Tick += new EventHandler(UpdateTimer_Tick);
             timer.Interval = new TimeSpan(0, 0, 1);
             timer.Start();
+
+            Application.Current.Dispatcher.BeginInvoke(           // toto by malo fungovat ako "Refresh"  appky 
+            DispatcherPriority.Background,
+            new Action(() =>
+            {
+                if (Users.Text == "admin")                        //toto je len na to ze ak som prihlaseny pod "admin" tak mam zobrazene okna adt..
+                {
+                    AdminButton.Visibility = Visibility.Visible;
+                }
+                else
+                {
+                    AdminButton.Visibility = Visibility.Hidden;
+                }
+            }));
         }
 
         private void UpdateTimer_Tick(object sender, EventArgs e)
@@ -39,7 +53,7 @@ namespace mApp
             date.Text = DateTime.Now.ToLongDateString();
         }
 
-        private void redCross_MouseDown(object sender, MouseButtonEventArgs e)   //toto mam vlastne vypnutie appky (okna), po stlaceni na X
+        private void redCross_MouseDown(object sender, MouseButtonEventArgs e)   //toto mam vypnutie appky (okna), po stlaceni na X
         {
             this.Close();
         }
@@ -62,6 +76,7 @@ namespace mApp
         {
             LoginWindows loginWin = new LoginWindows();
             loginWin.Show();
+            this.Close();
         }
 
 

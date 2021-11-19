@@ -49,12 +49,12 @@ namespace mApp.MVVM.View
                 db.InsertRecord("Texts", text);
 
                 MessageBox.Show("Zapisane");
-                AllMethods.WriteToConsole("Successfully writted.");
+                AllMethods.WriteToConsole("Successfully writted text to the Data Base.");
             }
             catch (Exception)
             {
                 MessageBox.Show("Error");
-                AllMethods.WriteToConsole("There is problem with wrtiting nadpis number one.");
+                AllMethods.WriteToConsole("There is problem with wrtiting to the Data Base.");
             }
         }
     

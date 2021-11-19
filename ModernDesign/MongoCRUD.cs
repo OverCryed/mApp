@@ -47,10 +47,10 @@ namespace mApp
         //        new UpdateOptions { IsUpsert = true });
         //}
 
-        public void DeleteRecord<T>(string table, Guid nadpis)
+        public void DeleteRecord<T>(string table, string nadpis)
         {
             var collection = db.GetCollection<T>(table);
-            var filter = Builders<T>.Filter.Eq("nadpi1", nadpis);
+            var filter = Builders<T>.Filter.Eq("Nadpi1", nadpis);
             collection.DeleteOne(filter);
         }
 

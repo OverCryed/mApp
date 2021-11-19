@@ -10,6 +10,7 @@ namespace mApp
     /// </summary>
     public partial class LoginWindows : Window
     {
+        public static string x;
         public LoginWindows()
         {
             InitializeComponent();
@@ -37,14 +38,11 @@ namespace mApp
                     MessageBox.Show("Parada, prihlaseny !");
                     AllMethods.WriteToConsole("Successfully logged as " + rec.email);
                     // Name = rec.email; //toto zmaz ak tak
+                    x = rec.email;
 
-                    MainViewModel main = new MainViewModel()
-                    {
-                        Name = rec.email
-                    };
-
+                    MainWindow main = new MainWindow();
+                    main.Show();
                     this.Close();
-
                     return;
                 }
                 else if (rec.email != name.Text && rec.password != password.Password)
