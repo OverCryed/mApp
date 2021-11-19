@@ -29,6 +29,11 @@ namespace mApp
             return collection.Find(new BsonDocument()).ToList();
         }
 
+        internal object GetCollection<T>()
+        {
+            throw new NotImplementedException();
+        }
+
         public T LoadRecordById<T>(string table, string email)
         {
             var collection = db.GetCollection<T>(table);
