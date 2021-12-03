@@ -79,6 +79,13 @@ namespace mApp
             this.Close();
         }
 
+        private void logout_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            LoginWindows loginWin = new LoginWindows();
+            loginWin.Show();
+            this.Close();
+        }
+
 
 
 

@@ -229,6 +229,14 @@
                            Grid.Column="0"
                            Grid.Row="1"
                            Grid.ColumnSpan="2" />
+
+                <Image Name="logout" 
+                       Source="/images/logout.png"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Margin="10,0,0,0"
+                       Grid.Row="1"
+                       Grid.Column="1" MouseLeftButtonDown="logout_MouseLeftButtonDown" />
             </Grid>
 
         </Grid>

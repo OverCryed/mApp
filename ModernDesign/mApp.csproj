@@ -24,6 +24,7 @@
     <None Remove="images\backgound.png" />
     <None Remove="images\dogy.png" />
     <None Remove="images\locker.png" />
+    <None Remove="images\logout.png" />
     <None Remove="images\minimize.png" />
     <None Remove="images\redCross.png" />
     <None Remove="images\userko.png" />
@@ -46,6 +47,9 @@
     </Resource>
     <Resource Include="images\locker.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\logout.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\minimize.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
