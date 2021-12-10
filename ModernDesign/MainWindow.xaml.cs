@@ -20,12 +20,6 @@ namespace mApp
         public MainWindow()
         {
             InitializeComponent();
-            //this.DataContext = new User();
-            //AdminButton.Visibility = Visibility.Hidden;
-
-            //  ConsoleAllocator.ShowConsoleWindow();     //toto len zapne konzolu, to mozem urobyt aj v settings...
-
-            //((MainWindow)System.Windows.Application.Current.MainWindow).UpdateLayout();
 
             DispatcherTimer timer = new DispatcherTimer();
             timer.Tick += new EventHandler(UpdateTimer_Tick);
