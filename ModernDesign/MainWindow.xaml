@@ -69,13 +69,13 @@
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding  KillerViewCommand}"/>
 
-                <RadioButton Content="Noter"
+                <RadioButton Content="Barcode"
                              Height="50"
                              Foreground="White"
                              FontSize="20"
                              FontWeight="Bold"
                              Style="{StaticResource MenuButtonTheme}"
-                             Command="{Binding  NOterViewCommand}"/>
+                             Command="{Binding  BarcodeCommand}"/>
 
                 <RadioButton Content="WifiPass"
                              Height="50"
@@ -204,7 +204,7 @@
                        Source="/images/users.png"
                        HorizontalAlignment="Left"
                        VerticalAlignment="Center"
-                       Margin="10,0,0,0"
+                       Margin="30,0,0,0"
                        Grid.Row="1"
                        Grid.Column="0" MouseLeftButtonDown="user_MouseLeftButtonDown"/>
 
@@ -223,7 +223,7 @@
                            Text="{Binding Path=Name, UpdateSourceTrigger=PropertyChanged}"
                            Foreground="White"
                            FontWeight="Bold"
-                           Margin="35,0,0,0"
+                           Margin="55,0,0,0"
                            HorizontalAlignment="Left"
                            VerticalAlignment="Center"
                            Grid.Column="0"
@@ -234,9 +234,9 @@
                        Source="/images/logout.png"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Center"
-                       Margin="10,0,0,0"
+                       Margin="0,0,65,0"
                        Grid.Row="1"
-                       Grid.Column="1" MouseLeftButtonDown="logout_MouseLeftButtonDown" />
+                       Grid.Column="0" MouseLeftButtonDown="logout_MouseLeftButtonDown" />
             </Grid>
 
         </Grid>

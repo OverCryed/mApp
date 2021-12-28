@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="mApp.MVVM.View.BarcodeGeneratorView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:mApp.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="700">
+    <Grid Background="White">
+
+        <Image Name="imgBox"
+               Width="600"
+               Height="300"
+               VerticalAlignment="Top"
+               Margin="10"
+               />
+
+        <Button Name="save"
+                Content="Save"
+                FontWeight="Bold"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Margin="0,0,150,50"
+                Width="80"
+                Height="20" Click="save_Click"/>
+
+        <Button Name="generate"
+                Content="Generate"
+                FontWeight="Bold"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Margin="0,0,50,50"
+                Width="80"
+                Height="20" Click="generate_Click"/>
+
+        <Label Content="Output:"
+               FontWeight="Bold"
+               Margin="20,250,0,0"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Left"/>
+
+        <TextBox Name="text"
+                 Width="550"
+                 Height="30"
+                 TextAlignment="Center"
+                 FontSize="20"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Center"
+                 Margin="50,250,0,0"/>
+    </Grid>
+</UserControl>

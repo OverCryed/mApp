@@ -29,11 +29,13 @@ namespace mApp.MVVM.ViewModel
         public RelayCommand WifiPassViewCommand { get; set; }
         public RelayCommand ConsoleCommand { get; set; }
         public RelayCommand AdminCommand { get; set; }
+        public RelayCommand BarcodeCommand { get; set; }
 
         public HomeViewModel HomeVM { get; set; }
         public mShutterViewModel mShutterVM { get; set; }
         public KillerViewModel KillerVM { get; set; }
-        public NoterViewModel NoterVM { get; set; }
+        public BarcodeGeneratorViewModel BarcodeVM { get; set; }
+        //public NoterViewModel NoterVM { get; set; }
         public AboutViewModel AboutVM { get; set; }
         public WifiPassViewModel WifiPassVM { get; set; }
         public ConsoleViewModel ConsoleVM { get; set; }
@@ -61,11 +63,12 @@ namespace mApp.MVVM.ViewModel
             HomeVM = new HomeViewModel();
             mShutterVM = new mShutterViewModel();
             KillerVM = new KillerViewModel();
-            NoterVM = new NoterViewModel();
+           // NoterVM = new NoterViewModel();
             AboutVM = new AboutViewModel();
             WifiPassVM = new WifiPassViewModel();
             ConsoleVM = new ConsoleViewModel();
             AdminVM = new AdminViewModel();
+            BarcodeVM = new BarcodeGeneratorViewModel();
 
             CurrentView = HomeVM;
 
@@ -84,10 +87,10 @@ namespace mApp.MVVM.ViewModel
                 CurrentView = KillerVM;
             });
 
-            NOterViewCommand = new RelayCommand(o =>
-            {
-                CurrentView = NoterVM;
-            });
+            //NOterViewCommand = new RelayCommand(o =>
+            //{
+            //    CurrentView = NoterVM;
+            //});
 
             AboutViewCommand = new RelayCommand(o =>
             {
@@ -109,6 +112,10 @@ namespace mApp.MVVM.ViewModel
                 CurrentView = AdminVM;
             });
 
+            BarcodeCommand = new RelayCommand(o =>
+            {
+                CurrentView = BarcodeVM;
+            });
         }
     }
 }
