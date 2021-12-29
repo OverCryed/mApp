@@ -35,9 +35,6 @@ namespace mApp.MVVM.View
             {
                 try
                 {
-                    //System.Drawing.Image img = null;
-                    //BitmapImage bimg = new BitmapImage();
-                    //using (var ms = new MemoryStream())
                     {
                         BarcodeWriter writer;
                         writer = new ZXing.BarcodeWriter() { Format = BarcodeFormat.CODE_93 };
@@ -54,7 +51,7 @@ namespace mApp.MVVM.View
                         bimg.StreamSource = ms;
                         bimg.EndInit();
                         this.imgBox.Source = bimg;// return File(ms.ToArray(), "image/jpeg");  
-                                                  // this.tbkbarcodecontent.Text = this.txtbarcodecontent.Text;
+                        this.tbkbarcodecontent.Text = this.text.Text;
                     }
                 }
                 catch (Exception ex)
@@ -67,13 +64,17 @@ namespace mApp.MVVM.View
         private void save_Click(object sender, RoutedEventArgs e)
         {
             if (imgBox == null)
-                return;
-
-          SaveFileDialog saveFileDialog = new SaveFileDialog();
-          saveFileDialog.Filter = "JPEG|*.jpeg|PNG|*.png|Text file(*.txt)|*txt|c# file (*.cs)|*.cs";
-          if (saveFileDialog.ShowDialog() == true)
             {
-                File.WriteAllText(saveFileDialog.FileName, text.Text);
+                return;
+            }
+            else
+            {
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.Filter = "JPEG|*.jpeg|PNG|*.png|Text file(*.txt)|*txt|c# file (*.cs)|*.cs";
+                if (saveFileDialog.ShowDialog() == true)
+                {
+                    File.WriteAllText(saveFileDialog.FileName, text.Text);
+                }
             }
         }
     }

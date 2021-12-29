@@ -10,7 +10,7 @@
 
         <Image Name="imgBox"
                Width="600"
-               Height="300"
+               Height="150"
                VerticalAlignment="Top"
                Margin="10"
                />
@@ -33,19 +33,26 @@
                 Width="80"
                 Height="20" Click="generate_Click"/>
 
-        <Label Content="Output:"
+        <Label Content="Text:"
                FontWeight="Bold"
-               Margin="20,250,0,0"
+               Margin="50,200,0,0"
                VerticalAlignment="Center"
                HorizontalAlignment="Left"/>
 
         <TextBox Name="text"
                  Width="550"
                  Height="30"
-                 TextAlignment="Center"
                  FontSize="20"
                  HorizontalAlignment="Center"
                  VerticalAlignment="Center"
-                 Margin="50,250,0,0"/>
+                 Margin="50,200,0,0"/>
+
+        <TextBlock Name="tbkbarcodecontent" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Center"
+                   Height="30"
+                   Width="600"
+                   TextAlignment="Center"
+                   Margin="0,0,0,100"/>
     </Grid>
 </UserControl>

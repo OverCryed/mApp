@@ -164,9 +164,9 @@
 
                 <TextBox Name="date"
                      Text="date"   
-                     HorizontalAlignment="Left"   
+                     HorizontalAlignment="Center"   
                      VerticalAlignment="Center"
-                     Grid.Column="2" 
+                     Grid.Column="1" 
                      Grid.Row="1"
                      Grid.ColumnSpan="3"
                      Style="{StaticResource DateTimeTextBox}"/>
