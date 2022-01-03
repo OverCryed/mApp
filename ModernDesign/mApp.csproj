@@ -20,6 +20,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="MVVM\ViewModel\NoterViewModel.cs" />
+    <Compile Remove="MVVM\View\NoterView.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="images\appsheet.png" />
     <None Remove="images\backgound.png" />
     <None Remove="images\dogy.png" />
@@ -32,7 +37,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Page Remove="MVVM\View\NoterView.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BarcodeLib" Version="2.4.0" />
     <PackageReference Include="MongoDB.Driver" Version="2.14.0-beta1" />
+    <PackageReference Include="ZXing.Net" Version="0.16.7" />
   </ItemGroup>
 
   <ItemGroup>

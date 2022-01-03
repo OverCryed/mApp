@@ -28,8 +28,8 @@
                 <view:KillerView/>
             </DataTemplate>
 
-            <DataTemplate DataType="{x:Type viewModel:NoterViewModel}">
-                <view:NoterView/>
+            <DataTemplate DataType="{x:Type viewModel:BarcodeGeneratorViewModel}">
+                <view:BarcodeGeneratorView/>
             </DataTemplate>
 
             <DataTemplate DataType="{x:Type viewModel:AboutViewModel}">
