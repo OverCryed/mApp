@@ -7,6 +7,7 @@ using System.Text;
 
 namespace mApp
 {
+
     public class AllMethods
     {
         static bool startWork = true; //len keby som to nechcel..
